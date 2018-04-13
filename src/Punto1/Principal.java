@@ -7,7 +7,7 @@ package Punto1;
 
 /**
  *
- * @author Ale Caceres
+ * @author juan Alancay
  */
 public class Principal {
 
@@ -15,7 +15,8 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Punto punto1=new Punto(1, 2);
+        Punto punto2=new Punto(3,2);
+        System.out.println("La distancia entre los dos punto :"+punto1.calcularDistaciaEntrePuntos(punto2));
     }
-    
 }
