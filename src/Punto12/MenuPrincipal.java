@@ -96,7 +96,7 @@ public class MenuPrincipal {
              break;
       }
       if(bandera==0 && (opcion!=4)){//sentencia de libro no encontra con bandera
-      System.out.println("libro no encontrado");
+      System.out.println("LIBRO NO ENCONTRADO");
       }
       }
    }
