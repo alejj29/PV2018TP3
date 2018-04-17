@@ -7,7 +7,7 @@ package Punto1;
 
 /**
  *
- * @author Fatima
+ * @author Alancay Juan Jose
  */
 public class Punto {
     private int x;//atributo de la clase
