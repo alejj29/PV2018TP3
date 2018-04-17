@@ -48,24 +48,24 @@ public class Rectangulo {
         this.altura = altura;
     }
     public void optenerPrimerPunto(){
-        double puntox1=this.x+this.base;       
+        double puntox1=this.x+this.base;//Cálculo para obtener el Primer punto faltante       
         double puntoy1=this.y;
         System.out.println("Primer Punto :("+puntox1+","+puntoy1+")");
     }
     public void optenerSegundoPunto(){
-        double puntox2=this.x;
+        double puntox2=this.x;//Cálculo para obtener el Segundo punto faltante
         double puntoy2=this.y+this.altura;
         System.out.println("Segundo Punto :("+puntox2+","+puntoy2+")");
     }
     public void optenerTercerPunto(){
-        double puntox3=(this.x+this.base)-this.base;
+        double puntox3=(this.x+this.base)-this.base;//Cálculo para obtener el Tercer punto faltante
         double puntoy3=this.y;
         System.out.println("Tercer Punto :("+puntox3+","+puntoy3+")");
     }
     public double obtenerSuperficie(){
-        return 2*this.altura+2*this.base;
+        return 2*this.altura+2*this.base;//Cálculo para obterner la Superficie
     }  
     public double obtenerPerimetro(){
-        return this.altura*this.base;
+        return this.altura*this.base;//Cálculo para obtener el Perimetro
     }
 }
