@@ -20,7 +20,7 @@ public class Busqueda {
         int limite = 0;
         while (limite==0) {            
             System.out.println("Menu de usuario");
-            System.out.println("1-Crear auto");
+            System.out.println("1-Crear Libro");
             System.out.println("2-Buscar Libro");
             System.out.println("3-salir");
             
