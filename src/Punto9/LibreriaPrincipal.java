@@ -18,15 +18,15 @@ public class LibreriaPrincipal {
         Scanner sc = new Scanner(System.in);
         List <Libros> busca = new ArrayList <Libros>();//declaracion de la lista
         //cargando listas
-        busca.add(new Libros(111111,"Pie Grande","Edgar",125));
-        busca.add(new Libros(222222,"Rayuel","Cortez",150));
-        busca.add(new Libros(333333,"La Regenta","Poldo",300));
-        busca.add(new Libros(444444,"El Tunel","Sabato",250));
-        busca.add(new Libros(555555,"El camino","Delibes",500));
-      
+        busca.add(new Libros(111111,"Pie Grande","Edgar teves",125));
+        busca.add(new Libros(222222,"Rayuel","Cortez cesar",150));
+        busca.add(new Libros(333333,"La Regenta","Poldo Rene",300));
+        busca.add(new Libros(444444,"El Tunel","Sabato Sabira",250));
+        busca.add(new Libros(555555,"El camino","Delibes Segobia",500));
+       
         System.out.println("-------BIENVENIDO A LA LIBRERIA SAN PABLO-------");
         System.out.println("ingrese el autor del libro que desea buscar");
-        String ingreso=sc.next();
+        String ingreso=sc.nextLine();
         boolean identificar=false;//indentificador bool
         for(int i=0; i<busca.size();i++){//bucle de busqueda
             if(ingreso.equals(busca.get(i).getAutor())){//sentencia de concidencia
