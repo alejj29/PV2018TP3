@@ -45,15 +45,3 @@ public class Productos {
     }
     
 }
-
-
-    public double getCantidadDeCuotas() {
-        return cantidadDeCuotas;
-    }
-
-    public void setCantidadDeCuotas(double cantidadDeCuotas) {
-        this.cantidadDeCuotas = cantidadDeCuotas;
-    }
-    
-}
-
