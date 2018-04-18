@@ -9,20 +9,15 @@ package Punto10;
  *
  * @author pc
  */
-public class Producto {
+public class Productos {
     private int codigo;
     private String nombre;
-    private double precioUnitario;
-    private double cantidadDeCuotas;
+    private int precio;
 
-    public Producto() {
-    }
-
-    public Producto(int codigo, String nombre, double precioUnitario, double cantidadDeCuotas) {
+    public Productos(int codigo, String nombre, int precio) {
         this.codigo = codigo;
         this.nombre = nombre;
-        this.precioUnitario = precioUnitario;
-        this.cantidadDeCuotas = cantidadDeCuotas;
+        this.precio = precio;
     }
 
     public int getCodigo() {
@@ -41,13 +36,16 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public double getPrecioUnitario() {
-        return precioUnitario;
+    public int getPrecio() {
+        return precio;
     }
 
-    public void setPrecioUnitario(double precioUnitario) {
-        this.precioUnitario = precioUnitario;
+    public void setPrecio(int precio) {
+        this.precio = precio;
     }
+    
+}
+
 
     public double getCantidadDeCuotas() {
         return cantidadDeCuotas;
