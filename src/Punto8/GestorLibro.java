@@ -21,8 +21,7 @@ public class GestorLibro {
         System.out.println("\nISBM\tAutor\tTitulo\tPrecio");
         for (Libro  l: libros) {
             System.out.println(l);
-        }
-        
+        }        
     }
    public void registrar(Libro l){
        libros.add(l);
