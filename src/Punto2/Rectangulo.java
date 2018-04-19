@@ -47,25 +47,45 @@ public class Rectangulo {
     public void setAltura(double altura) {
         this.altura = altura;
     }
-    public void optenerPrimerPunto(){
-        double puntox1=this.x+this.base;//Cálculo para obtener el Primer punto faltante       
-        double puntoy1=this.y;
+    /**
+    *
+    * @return  el Primer punto del rectangulo
+    */
+    public void optenerPrimerPunto(Rectangulo r){
+        double puntox1=r.getX()+r.getBase();//Cálculo para obtener el Primer punto faltante       
+        double puntoy1=r.getY();
         System.out.println("Primer Punto :("+puntox1+","+puntoy1+")");
     }
-    public void optenerSegundoPunto(){
-        double puntox2=this.x;//Cálculo para obtener el Segundo punto faltante
-        double puntoy2=this.y+this.altura;
+    /**
+    *
+    * @return  el Segundo punto del rectangulo
+    */
+    public void optenerSegundoPunto(Rectangulo r){
+        double puntox2=r.getX();//Cálculo para obtener el Segundo punto faltante
+        double puntoy2=r.getY()+r.getAltura();
         System.out.println("Segundo Punto :("+puntox2+","+puntoy2+")");
     }
-    public void optenerTercerPunto(){
-        double puntox3=(this.x+this.base)-this.base;//Cálculo para obtener el Tercer punto faltante
-        double puntoy3=this.y;
+    /**
+    *
+    * @return  el Tercer punto del rectangulo
+    */
+    public void optenerTercerPunto(Rectangulo r){
+        double puntox3=(r.getX()+r.getBase())-r.getBase();//Cálculo para obtener el Tercer punto faltante
+        double puntoy3=r.getY();
         System.out.println("Tercer Punto :("+puntox3+","+puntoy3+")");
     }
-    public double obtenerSuperficie(){
-        return 2*this.altura+2*this.base;//Cálculo para obterner la Superficie
-    }  
-    public double obtenerPerimetro(){
-        return this.altura*this.base;//Cálculo para obtener el Perimetro
+    /**
+    *
+    * @return  la Superficie del rectangulo
+    */
+    public double obtenerSuperficie(Rectangulo r){
+        return 2*r.getAltura()+2*r.getBase();//Cálculo para obterner la Superficie
+    } 
+    /**
+    *
+    * @return el Perimetro del rectangulo
+    */
+    public double obtenerPerimetro(Rectangulo r){
+        return r.getAltura()*r.getBase();//Cálculo para obtener el Perimetro
     }
 }

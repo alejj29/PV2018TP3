@@ -33,11 +33,11 @@ public class Principal {
         unRectangulo.setAltura(altura);
         unRectangulo.setBase(base);
                    
-        unRectangulo.optenerPrimerPunto();
-        unRectangulo.optenerSegundoPunto();
-        unRectangulo.optenerTercerPunto();
-        System.out.println("La superficie es :"+unRectangulo.obtenerSuperficie());
-        System.out.println("El perimetro es :"+unRectangulo.obtenerPerimetro());
+        unRectangulo.optenerPrimerPunto(unRectangulo);
+        unRectangulo.optenerSegundoPunto(unRectangulo);
+        unRectangulo.optenerTercerPunto(unRectangulo);
+        System.out.println("La superficie es :"+unRectangulo.obtenerSuperficie(unRectangulo));
+        System.out.println("El perimetro es :"+unRectangulo.obtenerPerimetro(unRectangulo));
          
     }
     
